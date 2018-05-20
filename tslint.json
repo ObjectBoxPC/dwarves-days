@@ -1,0 +1,20 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "indent": {
+            "options": ["tabs"]
+        },
+        "interface-name": false,
+        "max-classes-per-file": false,
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "quotemark": {
+            "options": ["single", "avoid-template"]
+        }
+    },
+    "rulesDirectory": []
+}
