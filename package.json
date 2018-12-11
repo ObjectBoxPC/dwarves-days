@@ -2,7 +2,8 @@
   "name": "dwarves-days",
   "version": "0.0.1",
   "description": "Create lists of seven items in the style of xkcd #1417",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "lint": "tslint -c tslint.json src/*.ts test/*.ts",
     "prepare": "rm -rf lib/ && tsc",
