@@ -1,5 +1,3 @@
-import chai = require('chai');
-const expect = chai.expect;
 import _ = require('lodash');
 
 import Set from '../src/set';
@@ -21,12 +19,12 @@ export default TEST_SETS;
 
 describe('test sets', () => {
 	it('should have the right number of sets', () => {
-		expect(TEST_SETS).to.have.length(TEST_SET_COUNT);
+		expect(TEST_SETS).toHaveLength(TEST_SET_COUNT);
 	});
 
 	it('should each have proper number of items', () => {
 		TEST_SETS.forEach((set) => {
-			expect(set.items).to.have.length(SET_SIZE);
+			expect(set.items).toHaveLength(SET_SIZE);
 		});
 	});
 });
