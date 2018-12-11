@@ -51,3 +51,7 @@ To express this in the format of the original comic, one may use the first (actu
 > Can you name the Seven Seas?
 
 > Sure, there's...Gulf of Mexico, green, fifth seal, Barnard, Sunday, physical, Lighthouse of Alexandria.
+
+## License
+
+This package is available under the MIT License. Refer to `LICENSE.txt` for details.
