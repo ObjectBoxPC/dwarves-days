@@ -20,5 +20,13 @@
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipchungtech/dwarves-days.git"
+  },
+  "bugs": {
+    "url": "https://github.com/philipchungtech/dwarves-days/issues"
+  },
+  "homepage": "https://github.com/philipchungtech/dwarves-days#readme"
 }
