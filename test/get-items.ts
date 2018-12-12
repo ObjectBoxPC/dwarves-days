@@ -19,7 +19,7 @@ describe('getItems', () => {
 				(set) => set.name === item.setName,
 			);
 			expect(setForItem).toBeDefined();
-			expect((setForItem as Set).items).toContain(item.itemName);
+			expect(setForItem!.items).toContain(item.itemName);
 		});
 	});
 
