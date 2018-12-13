@@ -1,7 +1,7 @@
 import Set from './set';
 import SET_SIZE from './set-size';
 
-interface ResultItem {
+export interface ResultItem {
 	setName: string;
 	itemName: string;
 }

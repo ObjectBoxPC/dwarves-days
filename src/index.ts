@@ -1,4 +1,5 @@
-import getItems from './get-items';
+import getItems, { ResultItem } from './get-items';
 import SETS from './sets';
+import Set from './set';
 
-export { getItems, SETS };
+export { getItems, ResultItem, SETS, Set };
