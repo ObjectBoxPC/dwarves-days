@@ -1,0 +1,32 @@
+{
+  "name": "dwarves-days-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demonstration site for Dwarves Days",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipchungtech/dwarves-days.git"
+  },
+  "author": "Philip Chung <philipchung1995@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philipchungtech/dwarves-days/issues"
+  },
+  "homepage": "https://github.com/philipchungtech/dwarves-days#readme",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-typescript": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
