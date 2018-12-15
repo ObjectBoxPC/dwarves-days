@@ -14,8 +14,8 @@
 						<v-card>
 							<v-card-text>
 								<div class="title">Sure, there's, um…</div>
-								<set-items :items="items"/>
 							</v-card-text>
+							<set-items :items="items"/>
 						</v-card>
 					</v-flex>
 					<v-flex>
