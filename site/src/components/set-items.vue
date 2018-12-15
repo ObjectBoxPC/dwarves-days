@@ -1,9 +1,9 @@
 <template>
-	<ul>
-		<li v-for="item in items" :key="item.itemName">
+	<v-list>
+		<v-list-tile v-for="item in items" :key="item.itemName">
 			{{ item.itemName }} ({{ item.setName }})
-		</li>
-	</ul>
+		</v-list-tile>
+	</v-list>
 </template>
 
 <script lang="ts">
