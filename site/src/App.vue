@@ -1,23 +1,18 @@
 <template>
 	<div>
-		<set-item
-			v-for="item in items"
-			:key="item.itemName"
-			:item="item.itemName"
-			:set="item.setName"
-		/>
+		<set-items :items="items"/>
 		<button @click="setItems">New Set</button>
 	</div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import SetItem from './components/set-item.vue';
+import SetItems from './components/set-items.vue';
 import { getItems, SETS, ResultItem } from 'dwarves-days';
 
 @Component({
 	components: {
-		SetItem,
+		SetItems,
 	},
 })
 export default class App extends Vue {
