@@ -1,7 +1,12 @@
 <template>
-	<v-list-tile>
-		{{ item }} ({{ explanation }})
-	</v-list-tile>
+	<v-list-group append-icon="">
+		<v-list-tile slot="activator">
+			{{ item }}
+		</v-list-tile>
+		<v-list-tile>
+			{{ explanation }}
+		</v-list-tile>
+	</v-list-group>
 </template>
 
 <script lang="ts">
