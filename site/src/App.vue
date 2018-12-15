@@ -1,8 +1,11 @@
 <template>
 	<div>
-		<template v-for="item in items">
-			<set-item :item="item.itemName" :set="item.setName"/>
-		</template>
+		<set-item
+			v-for="item in items"
+			:key="item.itemName"
+			:item="item.itemName"
+			:set="item.setName"
+		/>
 	</div>
 </template>
 
