@@ -6,6 +6,7 @@
 			:item="item.itemName"
 			:set="item.setName"
 		/>
+		<button @click="setItems">New Set</button>
 	</div>
 </template>
 
@@ -20,10 +21,13 @@ import { getItems, SETS, ResultItem } from 'dwarves-days';
 	},
 })
 export default class App extends Vue {
-	items: ResultItem[];
+	items: ResultItem[] = [];
 
-	constructor() {
-		super();
+	created() {
+		this.setItems();
+	}
+
+	setItems() {
 		this.items = getItems(SETS);
 	}
 }
