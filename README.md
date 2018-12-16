@@ -2,9 +2,16 @@
 
 Dwarves Days is a simple package for creating random sets of seven items taken from other sets. It is inspired by the [xkcd comic "Seven"](https://www.xkcd.com/1417/).
 
-## Usage
+A [demonstration site](https://philipchungtech.github.io/dwarves-days/) is available.
 
-Simple demonstration:
+The source code is organized into two directories:
+
+* `core`: The package itself
+* `site`: The demonstration site
+
+## Package Usage
+
+Simple example:
 
 ```
 const dwarvesDays = require('dwarves-days');
@@ -56,4 +63,4 @@ To express this in the format of the original comic, one may use the first (actu
 
 ## License
 
-This package is available under the MIT License. Refer to `LICENSE.txt` for details.
+The package and site are available under the MIT License. Refer to `LICENSE.txt` for details.
