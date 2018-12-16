@@ -32,7 +32,7 @@
 							<v-card-text-text><a href="https://github.com/philipchungtech/dwarves-days">Source code</a> on GitHub</v-card-text-text>
 						</v-card-text>
 						<v-card-text>
-							<v-card-text-text>Based on the <a href="https://xkcd.com/1417/">xkcd comic "Seven"</a> and <a href="https://explainxkcd.com/wiki/index.php/1417:_Seven">analysis by explain xkcd</a></v-card-text-text>
+							<v-card-text-text>Based on the <a href="https://xkcd.com/1417/">xkcd comic “Seven”</a> and <a href="https://explainxkcd.com/wiki/index.php/1417:_Seven">analysis by explain xkcd</a></v-card-text-text>
 						</v-card-text>
 					</v-card>
 				</v-flex>
