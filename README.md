@@ -35,7 +35,7 @@ const daysOfWeek: Set = {
 		'Saturday',
 		'Sunday',
 	]
-}
+};
 ```
 
 The `SETS` variable is an array of sets based on the original comic, as analyzed by [explain xkcd](https://explainxkcd.com/wiki/index.php/1417:_Seven).
@@ -52,7 +52,7 @@ const randomSet: ResultItem[] = [
 	{ setName: 'days of the week', itemName: 'Sunday' },
 	{ setName: 'layers of the OSI model', itemName: 'physical' },
 	{ setName: 'Seven Wonders of the Ancient World', itemName: 'Lighthouse of Alexandria' },
-]
+];
 ```
 
 To express this in the format of the original comic, one may use the first (actual) set as the prompt:
