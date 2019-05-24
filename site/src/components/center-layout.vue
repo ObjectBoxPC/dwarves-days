@@ -1,4 +1,4 @@
-<template>
+<template functional>
 	<v-layout justify-center>
 		<v-flex xs12 sm8>
 			<v-container grid-list-xl>
