@@ -1,6 +1,6 @@
 {
   "name": "dwarves-days",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create lists of seven items in the style of xkcd #1417",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
