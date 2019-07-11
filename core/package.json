@@ -12,13 +12,13 @@
   "author": "Philip Chung <philipchung1995@yahoo.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/lodash": "^4.14.132",
+    "@types/jest": "^24.0.15",
+    "@types/lodash": "^4.14.136",
     "jest": "^24.8.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.14",
     "ts-jest": "^23.10.5",
-    "tslint": "^5.16.0",
-    "typescript": "^3.4.5"
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   },
   "dependencies": {},
   "repository": {
