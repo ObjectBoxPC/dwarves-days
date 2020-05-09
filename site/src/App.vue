@@ -50,13 +50,13 @@ import { getItems, SETS, ResultItem } from 'dwarves-days';
 	},
 })
 export default class App extends Vue {
-	items: ResultItem[] = [];
+	public items: ResultItem[] = [];
 
-	created() {
+	public created() {
 		this.setItems();
 	}
 
-	setItems() {
+	public setItems() {
 		this.items = getItems(SETS);
 	}
 }

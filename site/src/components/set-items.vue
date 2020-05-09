@@ -17,6 +17,6 @@ import { ResultItem } from 'dwarves-days';
 
 @Component
 export default class SetItems extends Vue {
-	@Prop(Array) items!: ResultItem[];
+	@Prop(Array) public items!: ResultItem[];
 }
 </script>
