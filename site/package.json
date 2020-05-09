@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ObjectBoxPC/dwarves-days#readme",
   "dependencies": {
-    "dwarves-days": "^1.1.1",
+    "dwarves-days": "^1.1.2",
     "vue": "^2.6.11",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.3.0",
