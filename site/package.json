@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philipchungtech/dwarves-days.git"
+    "url": "git+https://github.com/ObjectBoxPC/dwarves-days.git"
   },
   "author": "Philip Chung <philipchung1995@yahoo.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/philipchungtech/dwarves-days/issues"
+    "url": "https://github.com/ObjectBoxPC/dwarves-days/issues"
   },
-  "homepage": "https://github.com/philipchungtech/dwarves-days#readme",
+  "homepage": "https://github.com/ObjectBoxPC/dwarves-days#readme",
   "dependencies": {
     "dwarves-days": "^1.1.1",
     "vue": "^2.6.11",

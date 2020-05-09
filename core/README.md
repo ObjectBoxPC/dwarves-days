@@ -2,7 +2,7 @@
 
 Dwarves Days is a simple package for creating random sets of seven items taken from other sets. It is inspired by the [xkcd comic "Seven"](https://www.xkcd.com/1417/).
 
-A [demonstration site](https://philipchungtech.github.io/dwarves-days/) is available.
+A [demonstration site](https://objectboxpc.github.io/dwarves-days/) is available.
 
 The source code is organized into two directories:
 
