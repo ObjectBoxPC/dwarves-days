@@ -7,9 +7,9 @@ const TEST_SET_COUNT = 10;
 
 function makeTestSets(): Set[] {
 	return _.range(TEST_SET_COUNT).map((currentSet) => ({
-		name: 'Set ' + (currentSet + 1),
+		name: `Set ${currentSet + 1}`,
 		items: _.range(SET_SIZE).map((currentItem) =>
-			'Item ' + (currentSet + 1) + '-' + (currentItem + 1),
+			`Item ${currentSet + 1}-${currentItem + 1}`,
 		),
 	}));
 }

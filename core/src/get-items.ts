@@ -7,7 +7,7 @@ export interface ResultItem {
 }
 
 export default function getItems(sets: Set[]): ResultItem[] {
-	const items = [];
+	const items: ResultItem[] = [];
 	const selectedSets = getRandomSets(sets, SET_SIZE);
 	for (let i = 0; i < SET_SIZE; i++) {
 		const indexInSet = Math.floor(Math.random() * SET_SIZE);
@@ -26,7 +26,7 @@ function getRandomSets(sets: Set[], count: number): Set[] {
 
 	// Use "Algorithm R" as described in
 	// Vitter, "Random Sampling with a Reservoir" (1985)
-	const reservoir = [];
+	const reservoir: Set[] = [];
 
 	for (let i = 0; i < count; i++) {
 		reservoir.push(sets[i]);

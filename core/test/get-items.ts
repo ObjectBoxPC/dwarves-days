@@ -1,7 +1,6 @@
 import _ = require('lodash');
 
 import getItems from '../src/get-items';
-import Set from '../src/set';
 import SET_SIZE from '../src/set-size';
 import TEST_SETS from './test-sets';
 
@@ -19,7 +18,7 @@ describe('getItems', () => {
 				(set) => set.name === item.setName,
 			);
 			expect(setForItem).toBeDefined();
-			expect(setForItem!.items).toContain(item.itemName);
+			expect(setForItem!.items).toContain(item.itemName); // eslint-disable-line @typescript-eslint/no-unnecessary-type-assertion
 		});
 	});
 
