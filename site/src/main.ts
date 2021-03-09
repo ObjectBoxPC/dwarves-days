@@ -8,5 +8,6 @@ Vue.config.productionTip = false;
 Vue.use(Vuetify);
 
 new Vue({
+	vuetify: new Vuetify({ icons: { iconfont: 'mdi' } }),
 	render: (h) => h(App),
 }).$mount('#app');

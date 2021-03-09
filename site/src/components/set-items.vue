@@ -1,12 +1,12 @@
 <template functional>
 	<v-list>
 		<v-list-group append-icon="" v-for="item in props.items" :key="itemName">
-			<v-list-tile slot="activator">
+			<v-list-item-title slot="activator">
 				{{ item.itemName }}
-			</v-list-tile>
-			<v-list-tile color="grey darken-2">
+			</v-list-item-title>
+			<v-list-item color="grey darken-2">
 				{{ item.setName }}
-			</v-list-tile>
+			</v-list-item>
 		</v-list-group>
 	</v-list>
 </template>

@@ -20,15 +20,15 @@
   "homepage": "https://github.com/ObjectBoxPC/dwarves-days#readme",
   "dependencies": {
     "dwarves-days": "^1.1.2",
-    "vue": "^2.6.11",
-    "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^7.3.0",
-    "vuetify": "^1.5.24"
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vuetify": "^2.4.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-typescript": "^3.12.1",
-    "@vue/cli-service": "^4.5.6",
-    "typescript": "^3.9.7",
+    "@vue/cli-plugin-typescript": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "typescript": "^4.2.3",
     "vue-template-compiler": "^2.6.12"
   }
 }
