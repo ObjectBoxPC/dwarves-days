@@ -1,8 +1,10 @@
 import getItems from '../src/get-items';
+import SetSizeError from '../src/set-size-error';
 import makeTestSets from '../test/make-test-sets';
 
+const setSize = 10;
+
 describe('getItems', () => {
-	const setSize = 10;
 	const sets = makeTestSets(setSize, setSize);
 
 	const items = getItems(sets, setSize);
@@ -26,5 +28,28 @@ describe('getItems', () => {
 				.findIndex((findItem) => findItem.setName === item.setName);
 			expect(firstSetOccurrence).toBe(i);
 		});
+	});
+});
+
+describe('getItems validation', () => {
+	it('should throw on bad set size', () => {
+		const sets = makeTestSets(setSize, setSize);
+
+		expect(() => getItems(sets, 0)).toThrow(SetSizeError);
+		expect(() => getItems(sets, -1)).toThrow(SetSizeError);
+	});
+
+	it('should throw when there are too few sets', () => {
+		const sets = makeTestSets(setSize - 1, setSize);
+
+		expect(() => getItems(sets, setSize)).toThrow(SetSizeError);
+	});
+
+	it('should throw when sets have incorrect number of items', () => {
+		const tooSmallSets = makeTestSets(setSize, setSize - 1);
+		const tooLargeSets = makeTestSets(setSize, setSize + 1);
+
+		expect(() => getItems(tooSmallSets, setSize)).toThrow(SetSizeError);
+		expect(() => getItems(tooLargeSets, setSize)).toThrow(SetSizeError);
 	});
 });
