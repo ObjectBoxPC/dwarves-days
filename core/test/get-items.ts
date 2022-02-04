@@ -14,7 +14,7 @@ describe('getItems', () => {
 			const setForItem = TEST_SETS
 				.find((set) => set.name === item.setName);
 			expect(setForItem).toBeDefined();
-			expect(setForItem!.items).toContain(item.itemName); // eslint-disable-line @typescript-eslint/no-unnecessary-type-assertion
+			expect(setForItem!.items).toContain(item.itemName);
 		});
 	});
 
