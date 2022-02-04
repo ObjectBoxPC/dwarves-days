@@ -20,7 +20,7 @@ describe('getItems', () => {
 		});
 	});
 
-	it('getItems should return items from different sets', () => {
+	it('should return items from different sets', () => {
 		items.forEach((item, i) => {
 			const firstSetOccurrence = items
 				.findIndex((findItem) => findItem.setName === item.setName);
