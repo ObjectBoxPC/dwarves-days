@@ -1,16 +1,15 @@
 import Set from './set';
-import SET_SIZE from './set-size';
 
 export interface ResultItem {
 	setName: string;
 	itemName: string;
 }
 
-export default function getItems(sets: Set[]): ResultItem[] {
+export default function getItems(sets: Set[], setSize: number): ResultItem[] {
 	const items: ResultItem[] = [];
-	const selectedSets = getRandomSets(sets, SET_SIZE);
-	for (let i = 0; i < SET_SIZE; i++) {
-		const indexInSet = Math.floor(Math.random() * SET_SIZE);
+	const selectedSets = getRandomSets(sets, setSize);
+	for (let i = 0; i < setSize; i++) {
+		const indexInSet = Math.floor(Math.random() * setSize);
 		items.push({
 			setName: selectedSets[i].name,
 			itemName: selectedSets[i].items[indexInSet],

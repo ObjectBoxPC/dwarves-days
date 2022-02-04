@@ -1,17 +1,19 @@
 import getItems from '../src/get-items';
-import SET_SIZE from '../src/set-size';
-import TEST_SETS from './test-sets';
+import makeTestSets from '../test/make-test-sets';
 
 describe('getItems', () => {
-	const items = getItems(TEST_SETS);
+	const setSize = 10;
+	const sets = makeTestSets(setSize, setSize);
+
+	const items = getItems(sets, setSize);
 
 	it('should return proper number of items', () => {
-		expect(items).toHaveLength(SET_SIZE);
+		expect(items).toHaveLength(setSize);
 	});
 
 	it('should return existing items', () => {
 		items.forEach((item) => {
-			const setForItem = TEST_SETS
+			const setForItem = sets
 				.find((set) => set.name === item.setName);
 			expect(setForItem).toBeDefined();
 			expect(setForItem!.items).toContain(item.itemName);
