@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "lint": "eslint src/**/*.ts test/**/*.ts",
+    "lint": "eslint --ext ts src test",
     "prepare": "rm -rf lib/ && tsc",
     "test": "jest"
   },
