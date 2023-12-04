@@ -1,8 +1,6 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"module": "umd",
-		"moduleResolution": "node10",
 		"outDir": "lib/",
 		"strict": true,
 		"target": "es5"
