@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+* Export modules using UMD (AMD + CommonJS)
+* Target ECMAScript 5 for module code
+
 ## 1.1.2
 
 * Updated repository URL
