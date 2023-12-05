@@ -1,0 +1,23 @@
+.row {
+	margin-top: 1em;
+}
+.question {
+	background-color: #88ccff;
+}
+.answer {
+	background-color: #88ff88;
+}
+.answer .card-body {
+	background-color: #ffffff;
+}
+.answer-item .card-header {
+	background-color: #ffffff;
+	cursor: pointer;
+}
+.answer-item .card-body {
+	background-color: #eeeeee;
+}
+footer {
+	margin-top: 1em;
+	text-align: center;
+}
