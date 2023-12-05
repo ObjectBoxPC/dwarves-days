@@ -74,7 +74,11 @@
 							h(
 								ReactBootstrap.Card.Body,
 								null,
-								'Can you name the ' + props.setName + '?'
+								h(
+									'p',
+									null,
+									'Can you name the ' + props.setName + '?'
+								)
 							)
 						)
 					)
@@ -94,14 +98,18 @@
 							h(
 								ReactBootstrap.Card.Header,
 								null,
-								'Sure, there’s, um…'
+								h(
+									'p',
+									null,
+									'Sure, there’s, um…'
+								)
 							),
 							h(
 								ReactBootstrap.Card.Body,
 								null,
 								h(
 									ReactBootstrap.Accordion,
-									null,
+									{ as: 'ul' },
 									props.items.map(function (item, i) {
 										return h(
 											AnswerItem,
@@ -122,12 +130,12 @@
 			function AnswerItem(props) {
 				return h(
 					ReactBootstrap.Card,
-					{ className: 'answer-item' },
+					{ as: 'li' },
 					h(
 						ReactBootstrap.Accordion.Toggle,
 						{
-							as: ReactBootstrap.Card.Header,
-							eventKey: String(props.index)
+							eventKey: String(props.index),
+							className: 'card-header btn btn-light text-left',
 						},
 						props.item.itemName
 					),
@@ -137,7 +145,11 @@
 						h(
 							ReactBootstrap.Card.Body,
 							null,
-							props.item.setName
+							h(
+								'p',
+								null,
+								props.item.setName
+							)
 						)
 					)
 				);
