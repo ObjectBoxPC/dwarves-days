@@ -134,8 +134,10 @@
 					h(
 						ReactBootstrap.Accordion.Toggle,
 						{
+							as: ReactBootstrap.Button,
 							eventKey: String(props.index),
-							className: 'card-header btn btn-light text-left',
+							variant: 'light',
+							className: 'card-header text-left',
 						},
 						props.item.itemName
 					),
