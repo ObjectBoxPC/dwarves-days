@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0
+
+* Export UMD bundle (CommonJS + AMD + global) for more convenient browser use
+* Deprecate multi-file UMD modules
+
 ## 1.2.1
 
 * Revert to CommonJS for main modules to avoid breaking compatibility with bundlers
