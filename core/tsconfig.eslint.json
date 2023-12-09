@@ -1,7 +1,5 @@
 {
-	"compilerOptions": {
-		"strict": true
-	},
+	"extends": "./tsconfig.json",
 	"include": [
 		"src/**/*",
 		"test/**/*"
