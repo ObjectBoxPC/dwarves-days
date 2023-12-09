@@ -1,7 +1,0 @@
-/src/
-/test/
-.eslintrc.json
-jest.config.json
-tsconfig.json
-tsconfig.eslint.json
-.travis.yml

@@ -4,6 +4,14 @@
   "description": "Create lists of seven items in the style of xkcd #1417",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "umd",
+    "*.umd.*",
+    "README.md",
+    "LICENSE.txt",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "lint": "eslint --ext ts src test",
     "prepare": "rm -rf lib/ && tsc && rm -rf umd/ && tsc --module umd --moduleResolution node10 --outDir umd && microbundle -i src/index.ts -o dwarves-days.umd.js --no-pkg-main -f umd",
