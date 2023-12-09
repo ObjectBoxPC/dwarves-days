@@ -9,7 +9,25 @@ The source code is organized into two directories:
 * `core`: The package itself
 * `site`: The demonstration site
 
-## Package Usage
+## Installation
+
+### Node
+
+The package is published on the npm registry as [dwarves-days](https://www.npmjs.com/package/dwarves-days):
+
+```
+npm install --save dwarves-days
+```
+
+### Browser
+
+A UMD file (`dwarves-days.umd.js`) is provided in the package that can be used directly in the browser. This can be installed using a CDN such as jsDelivr: https://cdn.jsdelivr.net/npm/dwarves-days@1.3.0/dwarves-days.umd.js
+
+This file will export the module as CommonJS, AMD, or a `dwarvesDay` global variable.
+
+(Note: Unbundled and unminified UMD modules [for CommonJS and AMD] are provided under the `umd` directory in the published package. These are deprecated in favor of the single UMD file mentioned previously.)
+
+## Usage
 
 Simple example:
 
