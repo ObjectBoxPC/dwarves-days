@@ -18,7 +18,7 @@ const dwarvesDays = require('dwarves-days');
 console.log(dwarvesDays.getItems(dwarvesDays.SETS));
 ```
 
-The `getItems` method takes an array of sets of seven and returns a random set of seven with items from different sets.
+The `getItems` method takes an array of sets of seven and returns a random set of seven with items from different sets. The `SETS` variable is an array of sets based on the original comic, as analyzed by [explain xkcd](https://explainxkcd.com/wiki/index.php/1417:_Seven).
 
 The input sets are represented as objects with a `name` and `items`. In TypeScript this is represented using the `Set` interface. For example:
 
@@ -37,8 +37,6 @@ const daysOfWeek: Set = {
 	]
 };
 ```
-
-The `SETS` variable is an array of sets based on the original comic, as analyzed by [explain xkcd](https://explainxkcd.com/wiki/index.php/1417:_Seven).
 
 The result set is an array of objects each containing a `setName` and an `itemName`. In TypeScript each item is represented using the `ResultItem` interface. For example:
 
