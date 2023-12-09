@@ -1,0 +1,28 @@
+.row {
+	margin-top: 1em;
+}
+.card p {
+	margin: 0em;
+}
+.question {
+	background-color: #88ccff;
+}
+.answer {
+	background-color: #88ff88;
+}
+.answer ul {
+	padding: 0em;
+}
+.answer .card-body {
+	background-color: #ffffff;
+}
+.answer li .card-header {
+	background-color: #ffffff;
+}
+.answer li .card-body {
+	background-color: #eeeeee;
+}
+footer {
+	margin-top: 1em;
+	text-align: center;
+}
