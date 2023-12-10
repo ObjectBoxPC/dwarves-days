@@ -22,6 +22,21 @@
 .answer li .card-body {
 	background-color: #eeeeee;
 }
+.btn-primary {
+	background-color: #0077cc;
+}
+.btn-primary:hover {
+	background-color: #0066cc;
+}
+.btn-primary:not(.disabled):not(.disabled):active {
+	background-color: #004488;
+}
+a {
+	color: #0077cc;
+}
+a:hover {
+	color: #006688;
+}
 footer {
 	margin-top: 1em;
 	text-align: center;
