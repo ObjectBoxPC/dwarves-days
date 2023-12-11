@@ -19,7 +19,7 @@
 .answer li .card-header {
 	background-color: #ffffff;
 }
-.answer li button:focus {
+.answer li button:hover, .answer li button:focus {
 	background-color: #eeeeee;
 }
 .answer li .card-body {
