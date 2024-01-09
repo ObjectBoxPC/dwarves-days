@@ -1,46 +1,12 @@
-.row {
-	margin-top: 1em;
-}
-.card p {
-	margin: 0em;
-}
 .question {
 	background-color: #88ccff;
 }
 .answer {
 	background-color: #88ff88;
 }
-.answer ul {
-	padding: 0em;
+.answer > p {
+	margin-top: 0;
 }
-.answer .card-body {
+.answer details {
 	background-color: #ffffff;
-}
-.answer li .card-header {
-	background-color: #ffffff;
-}
-.answer li button:hover, .answer li button:focus {
-	background-color: #eeeeee;
-}
-.answer li .card-body {
-	background-color: #cccccc;
-}
-.btn-primary {
-	background-color: #0077cc;
-}
-.btn-primary:hover {
-	background-color: #0066cc;
-}
-.btn-primary:not(.disabled):not(.disabled):active {
-	background-color: #004488;
-}
-a {
-	color: #0077cc;
-}
-a:hover {
-	color: #006688;
-}
-footer {
-	margin-top: 1em;
-	text-align: center;
 }
