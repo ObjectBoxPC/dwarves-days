@@ -18,17 +18,23 @@ export default function getItems(sets: Set[]): ResultItem[] {
 }
 
 function getRandomSets(sets: Set[], count: number): Set[] {
-	if (sets.length <= count) {
-		return sets;
-	}
-
 	// Use "Algorithm R" as described in
 	// Vitter, "Random Sampling with a Reservoir" (1985)
-	const reservoir: Set[] = [];
+	const reservoir = sets.slice(0, count);
 
-	for (let i = 0; i < count; i++) {
-		reservoir.push(sets[i]);
+	// We need to shuffle the initial items to ensure uniform ordering
+	// Use the Fisher-Yates shuffle
+	for (let i = 0; i < reservoir.length - 1; i++) {
+		const j = Math.floor(Math.random() * (reservoir.length - i)) + i;
+		const temp = reservoir[i];
+		reservoir[i] = reservoir[j];
+		reservoir[j] = temp;
 	}
+
+	if (sets.length <= count) {
+		return reservoir;
+	}
+
 	for (let i = count; i < sets.length; i++) {
 		const j = Math.floor(Math.random() * (i + 1));
 		if (j < count) {
