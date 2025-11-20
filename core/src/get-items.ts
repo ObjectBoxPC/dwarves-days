@@ -7,16 +7,14 @@ export interface ResultItem {
 }
 
 export default function getItems(sets: Set[]): ResultItem[] {
-	const items: ResultItem[] = [];
 	const selectedSets = getRandomSets(sets, SET_SIZE);
-	for (let i = 0; i < SET_SIZE; i++) {
+	return selectedSets.map((s) => {
 		const indexInSet = Math.floor(Math.random() * SET_SIZE);
-		items.push({
-			setName: selectedSets[i].name,
-			itemName: selectedSets[i].items[indexInSet],
-		});
-	}
-	return items;
+		return {
+			setName: s.name,
+			itemName: s.items[indexInSet],
+		}
+	});
 }
 
 function getRandomSets(sets: Set[], count: number): Set[] {
