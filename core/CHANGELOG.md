@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1
+
+* Fix a bug in `getItems` where the sets were not shuffled before retrieving items
+
 ## 1.3.0
 
 * Export UMD bundle (CommonJS + AMD + global) for more convenient browser use
