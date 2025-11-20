@@ -17,7 +17,7 @@
     "prepare": "rm -rf lib/ && tsc && rm -rf umd/ && tsc --module umd --moduleResolution node10 --outDir umd && microbundle -i src/index.ts -o dwarves-days.umd.js --no-pkg-main -f umd",
     "test": "jest"
   },
-  "author": "Philip Chung <philipchung1995@yahoo.com>",
+  "author": "Philip Chung <contact@objectboxpc.name>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.10",
