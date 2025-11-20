@@ -21,7 +21,7 @@ npm install --save dwarves-days
 
 ### Browser
 
-A UMD file (`dwarves-days.umd.js`) is provided in the package that can be used directly in the browser. This can be installed using a CDN such as jsDelivr: https://cdn.jsdelivr.net/npm/dwarves-days@1.3.0/dwarves-days.umd.js
+A UMD file (`dwarves-days.umd.js`) is provided in the package that can be used directly in the browser. This can be installed using a CDN such as jsDelivr: https://cdn.jsdelivr.net/npm/dwarves-days@1.3.1/dwarves-days.umd.js
 
 This file will export the module as CommonJS, AMD, or a `dwarvesDays` global variable.
 
