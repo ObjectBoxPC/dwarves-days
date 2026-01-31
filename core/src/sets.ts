@@ -31,7 +31,7 @@ const SETS = [
 			'Africa',
 			'North America',
 			'South America',
-			'Antartica',
+			'Antarctica',
 			'Europe',
 			'Australia',
 		],
