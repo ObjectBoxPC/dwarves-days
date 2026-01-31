@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2
+
+* Fix a typo in the set data
+
 ## 1.3.1
 
 * Fix a bug in `getItems` where the sets were not shuffled before retrieving items
